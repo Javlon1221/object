@@ -1,4 +1,4 @@
-@media(max-width: 600px){
+@media(max-width: 650px){
     .navbar_ul {
         display: none;
         flex-direction: column;
@@ -24,6 +24,43 @@
         background: var(--green--bg);
         color: white;
     }
-    
-    
+    .sektor{
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px 5px;
+        margin-top: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .urlo{
+        font-size: 24px;
+    }
+    .urli{
+        font-size: 12px;
+    }
+    .sector2 {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 270px;
+    }
+    .seccc img{
+        max-width: 270px;
+    }
+    .imds{
+        max-width: 220px;
+    }
+    .asmi{
+        display: none;
+    }
+    .salk{
+        display: none;
+    }
+    .desa{
+        display: none;
+    }
+
 }

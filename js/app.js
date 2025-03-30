@@ -1,59 +1,53 @@
-{
-    //001
-    function createUser(name, age) {
-        return { name, age, isAdmin: false };
+
+function oddNumbersLoop() {
+    for (let i = 1; i <= 10; i += 2) {
+        console.log(i);
     }
-    
-    console.log(createUser("Ali", 25)); 
 }
 
-{
-    //002
-    function sumNumbers(...numbers) {
-        return numbers.reduce((acc, num) => acc + num, 0);
+console.log("Loop:"); oddNumbersLoop();
+
+
+
+function tensLoop() {
+    for (let i = 100; i >= 0; i -= 10) {
+        console.log(i);
     }
-    
-    
-    console.log(sumNumbers(3, 4, 6, 10)); 
 }
 
+console.log("Loop:"); tensLoop();
 
-{
-    //003
-    function displayUserInfo(user) {
-        const { name, age } = user;
-        return `Name: ${name}, Age: ${age}`;
+
+
+function sumLoop() {
+    let sum = 0;
+    for (let i = 0; i <= 10; i++) {
+        sum += i;
     }
-    
-    console.log(displayUserInfo({ name: "Bobur", age: 30 })); 
+    return sum;
 }
 
-{
-    //004
+console.log("Loop:", sumLoop());
 
-    function objectToArray(obj) {
-        return Object.entries(obj);
+// Kutilgan natija: 55
+
+// 4) n soni berilgan "Laylo" ismini n marta qaytarish
+
+function printLayloLoop(n) {
+    for (let i = 0; i < n; i++) {
+        console.log("Laylo");
     }
-    
-    console.log(objectToArray({ name: "Ali", age: 25 })); 
 }
 
-{
-    //005
+console.log("Loop:"); printLayloLoop(5);
 
-    function getKeysAndValues(obj) {
-        return Object.keys(obj);
+
+function powerLoop(a, n) {
+    let result = 1;
+    for (let i = 0; i < n; i++) {
+        result *= a;
     }
-
-    console.log(getKeysAndValues({ a: 1, b: 2, c: 3 })); 
-}    
-
-{
-    //006
-
-    function sumPositiveValues(obj) {
-        return Object.values(obj).reduce((acc, val) => (val > 0 ? acc + val : acc), 0);
-    }
-    
-    console.log(sumPositiveValues({ a: -5, b: 10, c: 15 })); 
+    return result;
 }
+
+console.log("Loop:", powerLoop(2, 3));
